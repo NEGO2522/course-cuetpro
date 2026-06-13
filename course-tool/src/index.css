@@ -68,10 +68,13 @@ body { font-family: var(--font-family); background-color: var(--bg-color); color
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .program-card-header { padding: 24px 24px 16px; }
-.program-card-title { font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.3; word-wrap: break-word; hyphens: auto; }
+.program-card-title { font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 12px; line-height: 1.3; overflow-wrap: break-word; word-break: break-word; }
 .program-card-badge { display: inline-block; padding: 4px 12px; background: #f1f5f9; color: #64748b; font-size: 0.8rem; font-weight: 600; border-radius: 999px; }
 
 .program-card-stats {
@@ -183,8 +186,11 @@ body { font-family: var(--font-family); background-color: var(--bg-color); color
   .stat-card { flex: 1 1 100%; }
   
   .program-card-stats { grid-template-columns: 1fr 1fr 1fr; }
-  .stat-num { font-size: 1rem; }
-  .stat-desc { font-size: 0.7rem; }
+  .program-stat-col { padding: 12px 4px; }
+  .stat-num { font-size: 1.1rem; }
+  .stat-desc { font-size: 0.65rem; }
   
   .action-link, .footer-link { font-size: 0.85rem; }
+  .program-card-header { padding: 16px; }
+  .program-card-title { font-size: 1.05rem; }
 }
